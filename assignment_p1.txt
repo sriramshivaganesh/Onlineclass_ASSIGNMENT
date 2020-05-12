@@ -1,0 +1,18 @@
+1)find out the traversal nodes for figure2 only the node names to be written?
+  page 154, fig 2:
+ans)
+               breadth first (or) Level order Traversal:
+		ABCDEFPE
+                    Depth First Traversal:
+		>Inorder:DBEPEAFC
+		>Preorder;ABDEPECF
+		>Postorder:DEPEBCFA
+      
+page 164,fig 2:
+ans)
+           Breadth first (or) Level order Traversal:
+                                                  ABUSREPWYAGJZ
+          Depth First Traversal:
+                                              Inorder - ZWSB YRA A EU GPJ
+                                             Preorder - A B SWZ R YA UE PGJ
+                                             Postorder - ZWS YAR B EGJPU A

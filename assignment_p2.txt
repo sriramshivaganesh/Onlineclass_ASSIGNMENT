@@ -1,0 +1,63 @@
+#problem2
+
+#A class that represents the individual node of the Binary tree
+class Node:
+    def __init__(self, key):
+        self.left = None
+        self.right = None
+        self.data= key
+
+#A function to do in-order traversal
+def print_in_order(root):
+    
+    if root:
+        #First recur the left child
+        print_in_order(root.left)
+        #print the root
+        print(root.data)
+        #Recur the right child at last
+        print_in_order(root.right)
+
+#A function to do pre-order traversal
+def print_pre_order(root):
+    
+    if root:
+        #print the root's value first
+        print(root.data)
+        #recur the left child after the root
+        print_pre_order(root.left)
+        #recur the right child last
+        print_pre_order(root.right)
+
+#A function to do post-order traversal
+def print_post_order(root):
+    
+    if root:
+        #recur the left child first
+        print_post_order(root.left)
+        #recur the right child 
+        print_post_order(root.right)
+        #print the root's value at last
+        print(root.data)
+    
+def main():
+    
+    root = Node('A')
+    root.left = Node('B')
+    root.right = Node('C')
+    root.left.left = Node('D')
+    root.left.right = Node('E')
+    root.right.left = Node('F')
+    root.right.right = Node('G')
+    root.left.right.left = Node('M')
+    root.right.left.right = Node('N')
+    print("Pre order Traversal of Binary tree is: ")
+    print_pre_order(root)
+    print("\nIn order Traversal of Binary tree is: ")
+    print_in_order(root)
+    print("\nPost order Traversal of Binary tree is: ")
+    print_post_order(root)
+
+#Driver code
+if __name__ == "__main__":
+    main()
